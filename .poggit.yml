@@ -3,5 +3,5 @@ branches:
 - master
 projects:
   SimpleBanner:
-    path: ""
+    path: "" 
 ...
