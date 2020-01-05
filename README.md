@@ -2,7 +2,7 @@
 A simple banner generator for Pocketmine-MP. **Requires [jojoe77777\FormAPI](https://poggit.pmmp.io/p/FormAPI) to work.**
 
 # Commands
- - /banner _[color tag](https://github.com/Invy55/SimpleBanner#colortags)_ -  Open a simple menu to create the banner
+ - /banner _[color tag](https://github.com/Invy55/SimpleBanner#color-tags)_ -  Open a simple menu to create the banner
  
    Permission: _simplebanner.banner_
    
