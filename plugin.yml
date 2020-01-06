@@ -1,14 +1,14 @@
 ---
-name: Banner
+name: SimpleBanner
 version: 0.0.1
 main: Invy55\SimpleBanner\Main
 api: 3.0.0
 
 commands:
  banner:
-  description: Open a menu to create the banner
-  permission: simplebanner.banner
+  description: Open a menu to create a new custom banner
+  permission: simplebanner.command.banner
 permissions:
- plugin.banner:
+ simplebanner.command.banner:
   default: op
 ...
