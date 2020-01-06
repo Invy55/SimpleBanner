@@ -25,3 +25,5 @@ Also visible with _/banner_
  - light_purple
  - yellow
  - white
+### Knowed issues
+ - Received banner isn't rendered.
