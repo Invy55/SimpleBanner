@@ -1,3 +1,4 @@
+[![](https://poggit.pmmp.io/shield.state/SimpleBanner)](https://poggit.pmmp.io/p/SimpleBanner)
 # SimpleBanner
 A simple banner generator for Pocketmine-MP. **Requires [jojoe77777\FormAPI](https://poggit.pmmp.io/p/FormAPI) to work.**
 
