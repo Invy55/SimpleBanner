@@ -4,4 +4,5 @@ branches:
 projects:
   SimpleBanner:
     path: "" 
+    icon: ".logo.png"
 ...
