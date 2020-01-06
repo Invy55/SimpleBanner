@@ -43,7 +43,7 @@ class Main extends PluginBase implements Listener{
                 $this->patterns = ['gra', 'gru', 'bri', 'hh','hhb','vh','vhr','ts','bs','ls','rs','ld','rud','lud','rd','cr','dls','drs','sc','cs','ms','tl','bl','tr','br','tt','bt','mr','mc','bts','tts','ss','bo','cbo','flo','cre','sku','moj'];
                 if(isset($args[0])){
                     if(!in_array(strtoupper($args[0]), $this->colors)){
-                        $sender->sendMessage('§4Color ' . $args[0] . ' not found, avaiable colors:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6gold§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+                        $sender->sendMessage('§4Color ' . $args[0] . ' not found, avaiable colors:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
                     }else{ 
                         $this->$player =  new \stdClass(); 
                         $this->layer($sender, strtolower($args[0]));
