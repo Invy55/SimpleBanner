@@ -1,7 +1,7 @@
 # SimpleBanner
 A simple banner generator for Pocketmine-MP. **Requires [jojoe77777\FormAPI](https://poggit.pmmp.io/p/FormAPI) to work.**
 
-This plugin allows you to generate custom banners with all the esistent patterns and colors, using a simple user-friendly in game interface.
+This plugin allows you to generate custom banners with all the existing patterns and colors, using a simple user-friendly in game interface.
 
 ## Commands
  - /banner _[color tag](https://github.com/Invy55/SimpleBanner#color-tags)_ -  Open a simple menu to create the banner
