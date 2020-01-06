@@ -49,7 +49,7 @@ class Main extends PluginBase implements Listener{
                         $this->layer($sender, strtolower($args[0]));
                     }
 			    }else{
-				    $sender->sendMessage('§4Please select a background color:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6gold§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+				    $sender->sendMessage('§4Please select a background color:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
 			    }
 			default:
 				return false;
