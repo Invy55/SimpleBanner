@@ -15,7 +15,7 @@ Also visible with _/banner_
  - dark_green
  - dark_aqua
  - dark_purple
- - gold
+ - orange
  - gray
  - dark_gray
  - blue
