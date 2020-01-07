@@ -1,6 +1,6 @@
 ---
 name: SimpleBanner
-version: 0.0.1
+version: 0.0.2
 main: Invy55\SimpleBanner\Main
 api: 3.0.0
 
