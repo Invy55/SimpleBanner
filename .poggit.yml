@@ -5,4 +5,7 @@ projects:
   SimpleBanner:
     path: "" 
     icon: ".logo.png"
+    libs:
+      - src: jojoe77777/FormAPI/libFormAPI
+        version: ^1.3
 ...
