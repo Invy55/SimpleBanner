@@ -7,7 +7,7 @@ This plugin allows you to generate custom banners with all the existing patterns
 ## Commands
  - /banner _[color tag](https://github.com/Invy55/SimpleBanner#color-tags)_ -  Open a simple menu to create the banner
  
-   Permission: _simplebanner.banner_
+   Permission: _simplebanner.command.banner_
    
 ## Color Tags
 Also visible with _/banner_
