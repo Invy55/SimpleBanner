@@ -11,7 +11,7 @@
                                888                       
                           Y8b d88P                       
                            "Y88P"
------ This project is under the Apache License 2.0 -----                       
+----- This project is under the GNU Affero General Public License v3.0 -----                       
 */
 declare(strict_types=1);
 namespace Invy55\SimpleBanner;
