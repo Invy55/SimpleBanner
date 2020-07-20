@@ -15,7 +15,7 @@ This plugin allows you to generate custom banners with all the existing patterns
 ## Config
 You can edit the "config.yml" in plugin data folder:
  - _banner-number_ The number of given banners, 1 to 16 default: 16
- - _banner-timeout_ Time to pass between running of /banner *in seconds*, default 0. Add permission _simplebanner.command.notimeout_ to a user to bypass the limit.
+ - _banner-timeout_ Time to pass between running of /banner **in seconds**, default 0. Add permission _simplebanner.command.notimeout_ to a user to bypass the limit.
    
 ## Color Tags
 Also visible with _/banner_
