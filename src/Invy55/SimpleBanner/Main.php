@@ -32,6 +32,14 @@ class Main extends PluginBase implements Listener{
         $this->bannerc = ['BLACK'=>'0',  'DARK_GREEN'=>'2', 'DARK_AQUA'=>'6', 'DARK_PURPLE'=>'5', 'ORANGE'=>'14', 'GRAY'=>'7', 'DARK_GRAY'=>'8', 'BLUE'=>'4', 'GREEN'=>'10', 'AQUA'=>'12', 'RED'=>'1', 'LIGHT_PURPLE'=>'9', 'YELLOW'=>'11', 'WHITE'=>'15'];
         $this->items = ['Gradient top to bottom', 'Gradient bottom to top', 'Bricks', 'Top half rectangle', 'Bottom half rectangle', 'Left half rectangle', 'Right half rectangle', 'Top small rectangle', 'Bottom small rectangle', 'Left small rectangle', 'Right small rectangle', 'Top left triangle', 'Top right triangle', 'Bottom left triangle', 'Bottom right triangle', 'Big §lX', 'Diagonal §l/', 'Diagonal §l\\', 'Cross §l+', 'Centered vertical line', 'Centered horizontal line', 'Top left square', 'Top right square', 'Bottom left square', 'Bottom right square', 'Top triangle', 'Bottom triangle', 'Centered rhombus', 'Centered "circle"', 'Bottom spikes', 'Top spikes', '4 horizontal lines', 'Frame', 'Spiky frame', 'Centered flower', 'Creeper head', 'Centered skull', 'Mojang logo'];
         $this->patterns = ['gra', 'gru', 'bri', 'hh','hhb','vh','vhr','ts','bs','ls','rs','ld','rud','lud','rd','cr','dls','drs','sc','cs','ms','tl','bl','tr','br','tt','bt','mr','mc','bts','tts','ss','bo','cbo','flo','cre','sku','moj'];
+        $this->saveResource("config.yml");
+        $this->saveResource("players-data.yml");
+        $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
+        $this->playerdata = new Config($this->getDataFolder() . "players-data.yml", Config::YAML);
+        if($this->config->get("banner-number") == FALSE or !is_numeric($this->config->get("banner-number")) or $this->config->get("banner-number") > 16){
+            $this->config->set("banner-number", 16);
+        }
+        $this->config->save();
 	}
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		$player = $sender->getName();
@@ -69,7 +77,7 @@ class Main extends PluginBase implements Listener{
                         $to_text = '§'.$this->colortags[strtoupper($this->$playern->color)]."Edited ".$this->$playern->color." banner";  //TODO: pattern to name
                         $player->sendMessage("§aOk finished! Generated banner name: §r" . $to_text);
                         $item = Item::fromString("minecraft:banner:".$this->bannerc[strtoupper($this->$playern->color)]);
-                        $item->setCount(16);
+                        $item->setCount(intval($this->config->get("banner-number")));
                         $item->setNamedTag(JsonNbtParser::parseJSON("{display:{Name:".$to_text."},BlockEntityTag:{Base:".$this->bannerc[strtoupper($this->$playern->color)].",Patterns:[".substr($this->$playern->all, 0, -1)."]}}"));
                         $player->getInventory()->addItem($item);
                         $this->$playern->color = null;
