@@ -36,11 +36,11 @@ class Main extends PluginBase implements Listener{
         $this->saveResource("players-data.yml");
         $this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML);
         $this->playerdata = new Config($this->getDataFolder() . "players-data.yml", Config::YAML);
-        if($this->config->get("banner-number") == FALSE or !is_numeric($this->config->get("banner-number")) or $this->config->get("banner-number") > 16){
+        if($this->config->get("banner-number") == FALSE or !is_numeric($this->config->get("banner-number")) or $this->config->get("banner-number") > 16 or $this->config->get("banner-number") < 1){
             $this->config->set("banner-number", 16);
             $this->config->save();
         }
-        if($this->config->get("banner-timeout") == FALSE or !is_numeric($this->config->get("banner-timeout"))){
+        if($this->config->get("banner-timeout") == FALSE or !is_numeric($this->config->get("banner-timeout")) or $this->config->get("banner-timeout") < 0){
             $this->config->set("banner-timeout", 0);
             $this->config->save();
         }
