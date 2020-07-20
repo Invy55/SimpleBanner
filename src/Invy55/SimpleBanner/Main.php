@@ -38,23 +38,42 @@ class Main extends PluginBase implements Listener{
         $this->playerdata = new Config($this->getDataFolder() . "players-data.yml", Config::YAML);
         if($this->config->get("banner-number") == FALSE or !is_numeric($this->config->get("banner-number")) or $this->config->get("banner-number") > 16){
             $this->config->set("banner-number", 16);
+            $this->config->save();
         }
-        $this->config->save();
+        if($this->config->get("banner-timeout") == FALSE or !is_numeric($this->config->get("banner-timeout"))){
+            $this->config->set("banner-timeout", 0);
+            $this->config->save();
+        }
 	}
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool{
 		$player = $sender->getName();
 		switch($command->getName()){
             case "banner":
-                if(isset($args[0])){
-                    if(!in_array(strtoupper($args[0]), $this->colors)){
-                        $sender->sendMessage('§4Color ' . $args[0] . ' not found, avaiable colors:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
-                    }else{ 
-                        $this->$player =  new \stdClass(); 
-                        $this->layer($sender, strtolower($args[0]));
+                $plconfig = $this->playerdata->get($player);
+                if($plconfig == FALSE){
+                    $timeout = TRUE;
+                }elseif(!is_numeric($plconfig)){
+                    $timeout = TRUE;
+                }elseif($plconfig+$this->config->get("banner-timeout") > microtime(TRUE)){
+                    $timeout = FALSE;
+                }else{
+                    $timeout = TRUE;
+                }
+                if($sender->hasPermission("simplebanner.command.notimeout") or $timeout){
+                    if(isset($args[0])){
+                        if(!in_array(strtoupper($args[0]), $this->colors)){
+                            $sender->sendMessage('§4Color ' . $args[0] . ' not found, avaiable colors:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
+                        }else{ 
+                            $this->$player =  new \stdClass(); 
+                            $this->layer($sender, strtolower($args[0]));
+                        }
+                    }else{
+                        $sender->sendMessage('§4Please select a background color:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
                     }
-			    }else{
-				    $sender->sendMessage('§4Please select a background color:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite§r.');
-			    }
+                }else{
+                    $towait = $plconfig+$this->config->get("banner-timeout");
+                    $sender->sendMessage('§7Please wait §l'.strval(intval($towait-microtime(TRUE))).'§r.');
+                }
 			default:
 				return false;
         }
@@ -83,6 +102,8 @@ class Main extends PluginBase implements Listener{
                         $this->$playern->color = null;
                         $this->$playern->all = null;
                         $this->$playern->pattern = null;
+                        $this->playerdata->set($playern, microtime(true));
+                        $this->playerdata->save();
                         return;
                     }else{
                         $selected = $result-1;
