@@ -1,0 +1,66 @@
+# Stile
+Gradient_top_to_bottom: Farbverlauf von oben nach unten
+Gradient_bottom_to_top: Farbverlauf von unten nach oben
+Bricks: Ziegel
+Top_half_rectangle: Obere Hälfte Rechteck
+Bottom_half_rectangle: Untere Hälfte Rechteck
+Left_half_rectangle: Linke Hälfte Rechteck
+Right_half_rectangle: Rechte Hälfte Rechteck
+Top_small_rectangle: Oberes Kleines Rechteck
+Bottom_small_rectangle: Unten Kleines Rechteck
+Left_small_rectangle: Linkes Kleines Rechteck
+Right_small_rectangle: Rechtes Kleines Rechteck
+Top_left_triangle: Oberes Linkes Dreieck
+Top_right_triangle: Oberes Rechtes Dreieck
+Unteres_Linkes_Dreieck: Unteres Linkes Dreieck
+Unteres_Rechtes_Dreieck: Unteres Rechtes Dreieck
+Big_X: Großes §lX
+Diagonal1: Diagonal §l/
+Diagonal2: Diagonal §l\
+Cross: Kreuz §l+
+Centered_vertical_line: Zentrierte Vertikale Linie
+Centered_horizontal_line: Zentrierte Horizontale Linie
+Top_left_square: Oberes Linkes Quadrat
+Top_right_square: Oberes Rechtes Quadrat
+Bottom_left_square: Unteres Links Quadrat
+Bottom_right_square: Unteres Rechtes Quadrat
+Top_triangle: Oberes Dreieck
+Bottom_triangle: Unteres Dreieck
+Centered_rhombus: Zentrierte Raute
+Centered_circle: Zentrierter "Kreis"
+Bottom_spikes: Untere Stacheln
+Top_spikes: Obere Stacheln
+4_horizontal_lines: 4 Horizontal Linien
+Frame: Rahmen
+Spiky_frame: Stacheliger Rahmen
+Centered_flower: Zentrierte Blume
+Creeper_head: Creeper Kopf
+Centered_skull: Zentrierter Schädel
+Mojang_logo: Mojang logo
+
+#Farben
+BLACK: SCHWARZ
+DARK_GREEN: DUNKEL_GRÜN
+DARK_AQUA: DUNKEL_AQUA
+DARK_PURPLE: DUNKEL_LILA
+ORANGE: ORANGE
+GRAY: GRAU
+DARK_GRAY: DUNKEL_GRAU
+BLUE: BLAU
+GREEN: GRÜN
+AQUA: AQUA
+RED: ROT
+LIGHT_PURPLE: HELL_LILA
+YELLOW: GELB
+WHITE: WEISS
+
+#Sätze
+Please_wait: "§7Bitte warte §l{x} Sekunden"
+Choose_background: "§4Bitte wähle eine Hintergrund Farbe:§r §0schwarz§r, §2dunkel_grün§r, §3dunkel_aqua§r, §5dunkel_lila§r, §6orange§r, §7grau§r, §8dunkel_grau§r, §9blau§r, §agrün§r, §baqua§r, §crot§r, §dhell_lila§r, §egelb§r, §fweiss"
+Color_not_found: "§4Farbe {x} nicht gefunden, Verfügbare Farben:§r §0schwarz§r, §2dunkel_grün§r, §3dunkel_aqua§r, §5dunkel_lila§r, §6orange§r, §7grau§r, §8dunkel_grau§r, §9blau§r, §agrün§r, §baqua§r, §crot§r, §dhell_lila§r, §egelb§r, §fweiss"
+Creating_banner: "Erstelle ein {x} banner"
+Choose_color: "Wählen Sie eine Farbe für das Muster: §l{x}"
+Select_pattern: "Wähle ein Muster"
+Done: "§k|-| §rFertig"
+Pattern_name: "Bearbeitet {x} Muster"
+Finished_message: "§aOk Fertig!Generierter Bannername: §r{x}"
