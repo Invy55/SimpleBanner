@@ -1,0 +1,66 @@
+# Стили
+Gradient_top_to_bottom: Градиент сверху вниз
+Gradient_bottom_to_top: Градиент снизу вверх
+Bricks: Кирпичи
+Top_half_rectangle: Верхняя половина прямоугольника
+Bottom_half_rectangle: Нижняя половина прямоугольника
+Left_half_rectangle: Левая половина прямоугольника
+Right_half_rectangle: Правая половина прямоугольника
+Top_small_rectangle: Верхняя треть прямоугольника
+Bottom_small_rectangle: Нижняя треть прямоугольника
+Left_small_rectangle: Левая треть прямоугольника
+Right_small_rectangle: Правая треть прямоугольника
+Top_left_triangle: Верхне-левый треугольник
+Top_right_triangle: Верхне-правый треугольник
+Bottom_left_triangle: Нижне-левый треугольник
+Bottom_right_triangle: Нижне-правый треугольник
+Big_X: Большой §lX
+Diagonal1: Диагональ §l/
+Diagonal2: Диагональ §l\
+Cross: Крест §l+
+Centered_vertical_line: Вертикальная линия по центру
+Centered_horizontal_line: Горизонтальная линия по центру
+Top_left_square: Верхне-левый квадрат
+Top_right_square: Верхне-правый квадрат
+Bottom_left_square: Нижне-левый квадрат
+Bottom_right_square: Нижне-правый квадрат
+Top_triangle: Верхний треугольник
+Bottom_triangle: Нижний треугольник
+Centered_rhombus: Ромб
+Centered_circle: Круг
+Bottom_spikes: Нижние шипы
+Top_spikes: Верхние шипы
+4_horizontal_lines: 4 горизонтальных линии
+Frame: Рамка
+Spiky_frame: Шипастая рамка
+Centered_flower: Цветок / шестерня
+Creeper_head: Голова крипера
+Centered_skull: Череп скелета
+Mojang_logo: Логотип Mojang
+
+#Цвета
+BLACK: BLACK
+DARK_GREEN: DARK_GREEN
+DARK_AQUA: DARK_AQUA
+DARK_PURPLE: DARK_PURPLE
+ORANGE: ORANGE
+GRAY: GRAY
+DARK_GRAY: DARK_GRAY
+BLUE: BLUE
+GREEN: GREEN
+AQUA: AQUA
+RED: RED
+LIGHT_PURPLE: LIGHT_PURPLE
+YELLOW: YELLOW
+WHITE: WHITE
+
+#Фразы
+Please_wait: "§7Пожалуйста, подождите §l{x} секунд(ы)"
+Choose_background: "§4Пожалйста, выберите цвет фона:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite"
+Color_not_found: "§4Цвет {x} не найден, есть такие цвета:§r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite"
+Creating_banner: "Создание {x} флага"
+Choose_color: "Выберите цвет узора: §l{x}"
+Select_pattern: "Выберите узор"
+Done: "§k|-| §rГотово"
+Pattern_name: "Изменённый {x} флаг"
+Finished_message: "§aГотово! Сгенерированное название баннера: §r{x}"
