@@ -16,6 +16,14 @@ This plugin allows you to generate custom banners with all the existing patterns
 You can edit the "config.yml" in plugin data folder:
  - _banner-number_ The number of given banners, 1 to 16 default: 16
  - _banner-timeout_ Time to pass between running of /banner **in seconds**, default 0. Add permission _simplebanner.command.notimeout_ to a user to bypass the limit.
+  - _banner-language_ Language of the plugin, default to english. File has to be in the plugin_data folder of SimpleBanner.
+  
+## Languages
+Want to add a new language or to improve an existing one? Just open an issue tagging the language author!
+| Language | Author |
+| :---: | :---: |
+| German | [@efor89](https://github.com/efor89) |
+| Russian | [@MaksPV](https://github.com/MaksPV) |
    
 ## Color Tags
 Also visible with _/banner_
