@@ -1,0 +1,66 @@
+# Styles
+Gradient_top_to_bottom: Degradado de arriba a abajo
+Gradient_bottom_to_top: Degradado de abajo hacia arriba
+Bricks: Ladrillos
+Top_half_rectangle: Medio rectángulo superior
+Bottom_half_rectangle: Medio rectángulo inferior
+Left_half_rectangle: Medio rectángulo izquierdo
+Right_half_rectangle: Medio rectángulo derecho
+Top_small_rectangle: Medio rectángulo superior
+Bottom_small_rectangle: Medio rectángulo inferior
+Left_small_rectangle: Rectángulo pequeño izquierdo
+Right_small_rectangle: Rectángulo pequeño derecho
+Top_left_triangle: Triángulo superior izquierdo
+Top_right_triangle: Triángulo superior derecho
+Bottom_left_triangle: Triángulo inferior izquierdo
+Bottom_right_triangle: Triángulo inferior derecho
+Big_X: Grande §lX
+Diagonal1: Diagonal §l \
+Diagonal2: Diagonal §l \
+Cross: Cruz §l +
+Centered_vertical_line: Línea vertical centrada
+Centered_horizontal_line: Línea horizontal centrada
+Top_left_square: Cuadrado superior izquierdo
+Top_right_square: Cuadrado superior derecho
+Bottom_left_square: Cuadrado inferior izquierdo
+Bottom_right_square: Cuadrado inferior derecho
+Top_triangle: Triángulo superior
+Bottom_triangle: Triángulo inferior
+Centered_rhombus: Rombo centrado
+Centered_circle: "Círculo" centrado
+Bottom_spikes: Picos inferiores
+Top_spikes: Picos superiores
+4_horizontal_lines: 4 líneas horizontales
+Frame: Marco
+Spiky_frame: Marco puntiagudo
+Centered_flower: Flor centrada
+Creeper_head: Cabeza de enredadera
+Centered_skull: Cráneo centrado
+Mojang_logo: Logotipo de Mojang
+
+#Colors
+BLACK: BLACK
+DARK_GREEN: DARK_GREEN
+DARK_AQUA: DARK_AQUA
+DARK_PURPLE: DARK_PURPLE
+ORANGE: ORANGE
+GRAY: GRAY
+DARK_GRAY: DARK_GRAY
+BLUE: BLUE
+GREEN: GREEN
+AQUA: AQUA
+RED: RED
+LIGHT_PURPLE: LIGHT_PURPLE
+YELLOW: YELLOW
+WHITE: WHITE
+
+#Sentences
+Please_wait: "§7Espere §l {x} segundos"
+Choose_background: "§4 Seleccione un color de fondo: §r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, §9blue§r, §Agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite"
+Color_not_found: "§4Color {x} no encontrado, colores disponibles: §r §0black§r, §2dark_green§r, §3dark_aqua§r, §5dark_purple§r, §6orange§r, §7gray§r, §8dark_gray§r, § 9blue§r, §agreen§r, §baqua§r, §cred§r, §dlight_purple§r, §eyellow§r, §fwhite "
+Creating_banner: "Creación de un banner {x}"
+Choose_color: "Elija un color para el patrón: §l {x}"
+Select_pattern: "Selecciona un patrón"
+Done: "§K | - | §rDone"
+Pattern_name: "Patrón {x} editado"
+Finished_message: "¡§AOk terminado! Nombre de banner generado: §r {x}"
