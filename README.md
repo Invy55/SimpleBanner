@@ -24,6 +24,7 @@ Want to add a new language or to improve an existing one? Just open an issue tag
 | :---: | :---: |
 | German | [@efor89](https://github.com/efor89) |
 | Russian | [@MaksPV](https://github.com/MaksPV) |
+| Spanish | [@64x2](https://github.com/64x2) |
    
 ## Color Tags
 Also visible with _/banner_
